@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-md-10" style="background-color:green;">
+    <div class="small-box" style="height:100px; text-align:center; font-size:50px;">
+        <p>Toplam Kategori Sayısı</p>
+        @ViewBag.totalcat
+    </div>
+</div>
+<br />
+<div class="col-md-10" style="background-color:yellow;">
+    <div class="small-box" style="height:100px; text-align:center; font-size:50px;">
+        <p>Başlık tablosunda "yazılım" kategorisine ait başlık sayısı</p>
+        @ViewBag.Totalheadingaboutyazilim
+    </div>
+</div>
+<br />
+<div class="col-md-10" style="background-color:red;">
+    <div class="small-box" style="height:100px; text-align:center; font-size:50px;">
+        <p>Yazar adında veya Soyadında 'a' harfi geçen yazar sayısı</p>
+        @ViewBag.aharfigecenyazar
+    </div>
+</div>
+<br />
+<div class="col-md-10" style="background-color:violet;">
+    <div class="small-box" style="height:100px; text-align:center; font-size:50px;">
+        <p>En fazla başlığa sahip kategori adı</p>
+        @ViewBag.enfazlabasligasahipkategori
+    </div>
+</div>
+<br />
+<div class="col-md-10" style="background-color:lightblue;">
+    <div class="small-box" style="height:100px; text-align:center; font-size:50px;">
+        <p>Kategori tablosunda durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark</p>
+        @ViewBag.fark
+    </div>
+</div>
+<br />

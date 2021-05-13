@@ -2,6 +2,7 @@
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -16,6 +17,11 @@ namespace DataAccessLayer.Concrete.Repositories
         DbSet<Writer> _object;
 
         public void Delete(Writer p)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Writer Get(Expression<Func<Writer, bool>> filter)
         {
             throw new NotImplementedException();
         }
